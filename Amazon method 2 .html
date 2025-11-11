@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f2f2f2; }
+        header { background-color: #232f3e; color: white; padding: 10px; display: flex; align-items: center; }
+        header h1 { margin: 0; font-size: 24px; }
+        .search-bar { flex: 1; margin: 0 10px; }
+        .search-bar input { width: 80%; padding: 5px; }
+        .search-bar button { padding: 6px 10px; background-color: #febd69; border: none; cursor: pointer; }
+        nav { background-color: #37475a; padding: 8px; }
+        nav a { color: white; text-decoration: none; margin-right: 15px; font-size: 14px; }
+        .banner { text-align: center; background-color: white; padding: 20px; margin: 10px; }
+        .categories, .products { background-color: white; margin: 10px; padding: 35px; }
+        .categories h2, .products h2 { font-size: 18px; }
+        .category-list, .product-list { 
+             display: flex; 
+             flex-wrap: wrap;
+            }
+            .product-list{
+                width: 50%;
+                /* border: 2px solid blue; */
+            }
+        .category-item, .product-item { 
+            
+            margin: 10px; 
+            padding: 10px; border: 1px solid #ccc; text-align: center; }
+        .product-item img { width: 100px; height: 100px; object-fit: contain; }
+
+        .product-item {
+            /* border: 4px solid red; */
+            width: 50%;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Amazon</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search products...">
+          <button>Search</button>
+        </div>
+        <button style="background:none;border:none;color:white;cursor:pointer;">Sign In</button>
+    </header>
+    <nav>
+        <select><option value="#">All</option></select>
+        <select><option value="#">Today's Deals</option></select>
+        <select><option value="#">Customer Service</option></select>
+        <select><option value="#">Gift Cards</option></select>
+        <select><option value="#">Sell</option></select>
+    </nav>
+    <img src="https://m.media-amazon.com/images/G/31/media/Media_TopicalStores_2022/1458113_in_770x300_1_4da4d109-7c20-45b4-8b4d-2dc062f46291.jpg" alt="Welcome to Amazon" class="banner-image" width="1500" height="400px">
+    <div class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+          <div class="category-item">Electronics</div>
+          <div class="category-item">Home & Kitchen</div>
+          <div class="category-item">Books</div>
+          <div class="category-item">Fashion</div>
+          <div class="category-item">Beauty</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="products">
+    <table>
+        <tr>
+            <th>SkullCandy Headphones
+                <br>
+                <img src="https://m.media-amazon.com/images/I/71XCMVABUdL._AC_.jpg" alt="SkullCandy Headphones" width="200" height="200"/>
+                <br>
+                Price: &#8377;2999
+            </th>
+            <th>Boat Airdopes
+                <br>
+                <img src="https://m.media-amazon.com/images/I/614gbl-O98L._AC_.jpg" alt="Boat Airdopes" width="200" height="200"/>
+                <br>
+                Price: &#8377;1999
+            </th>
+        </tr>
+        <tr>
+            <th>JBL Bluetooth Speaker
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6583/6583087_rd.jpg" alt="JBL Bluetooth Speaker" width="200" height="200"/>
+                <br>
+                Price: &#8377;3499
+            </th>
+            <th>Apple AirPods
+                <br>
+                <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2023/04/apple-airpods-pro-2.jpg" alt="Apple AirPods" width="200" height="200"/>
+                <br>
+                Price: &#8377;12999
+            </th>
+        </tr>
+        </table>
+        </div>
+        <div class="products">
+        <table>
+        <tr>
+            <th>Lenovo Laptop
+                <br>
+                <img src="https://p1-ofp.static.pub/medias/26437358075_IDP2IN114IRH9LG_202404010426021728349724806.png" alt="Lenovo Laptop" width="200" height="200"/>
+                <br>
+                Price: &#8377;69999
+            </th>
+            <th>Dell Monitor
+                <br>
+                <img src="https://i5.walmartimages.com/asr/9712a6fb-9c06-4a68-83a8-4c11c7066a33_4.d74c14360daa8244c9764fbbcab6e9fb.jpeg" alt="Dell Monitor" width="200" height="200"/>
+                <br>
+                Price: &#8377;15999
+            </th>
+        </tr>
+        <tr>
+            <th>HP Printer
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4973/4973102_rd.jpg" alt="HP Printer" width="200" height="200"/>
+                <br>
+                Price: &#8377;8999
+            </th>
+            <th>Canon DSLR Camera
+                <br>
+                <img src="https://m.media-amazon.com/images/I/61jL+1gWqzL._AC_SL1500_.jpg" alt="Canon DSLR Camera" width="200" height="200"/>
+                <br>
+                Price: &#8377;45999
+            </th>
+        </tr>
+    </table>
+    </div>
+    <div class="products">
+        <table>
+        <tr>
+            <th>SkullCandy Headphones
+                <br>
+                <img src="https://m.media-amazon.com/images/I/71XCMVABUdL._AC_.jpg" alt="SkullCandy Headphones" width="200" height="200"/>
+                <br>
+                Price: &#8377;2999
+            </th>
+            <th>Boat Airdopes
+                <br>
+                <img src="https://m.media-amazon.com/images/I/614gbl-O98L._AC_.jpg" alt="Boat Airdopes" width="200" height="200"/>
+                <br>
+                Price: &#8377;1999
+            </th>
+        </tr>
+        <tr>
+            <th>JBL Bluetooth Speaker
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6583/6583087_rd.jpg" alt="JBL Bluetooth Speaker" width="200" height="200"/>
+                <br>
+                Price: &#8377;3499
+            </th>
+            <th>Apple AirPods
+                <br>
+                <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2023/04/apple-airpods-pro-2.jpg" alt="Apple AirPods" width="200" height="200"/>
+                <br>
+                Price: &#8377;12999
+            </th>
+        </tr>
+    </table>
+    
+    </div>
+    </div>
+   <div class="container">
+        <div class="products">
+    <table>
+        <tr>
+            <th>SkullCandy Headphones
+                <br>
+                <img src="https://m.media-amazon.com/images/I/71XCMVABUdL._AC_.jpg" alt="SkullCandy Headphones" width="200" height="200"/>
+                <br>
+                Price: &#8377;2999
+            </th>
+            <th>Boat Airdopes
+                <br>
+                <img src="https://m.media-amazon.com/images/I/614gbl-O98L._AC_.jpg" alt="Boat Airdopes" width="200" height="200"/>
+                <br>
+                Price: &#8377;1999
+            </th>
+        </tr>
+        <tr>
+            <th>JBL Bluetooth Speaker
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6583/6583087_rd.jpg" alt="JBL Bluetooth Speaker" width="200" height="200"/>
+                <br>
+                Price: &#8377;3499
+            </th>
+            <th>Apple AirPods
+                <br>
+                <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2023/04/apple-airpods-pro-2.jpg" alt="Apple AirPods" width="200" height="200"/>
+                <br>
+                Price: &#8377;12999
+            </th>
+        </tr>
+        </table>
+        </div>
+        <div class="products">
+        <table>
+        <tr>
+            <th>Lenovo Laptop
+                <br>
+                <img src="https://p1-ofp.static.pub/medias/26437358075_IDP2IN114IRH9LG_202404010426021728349724806.png" alt="Lenovo Laptop" width="200" height="200"/>
+                <br>
+                Price: &#8377;69999
+            </th>
+            <th>Dell Monitor
+                <br>
+                <img src="https://i5.walmartimages.com/asr/9712a6fb-9c06-4a68-83a8-4c11c7066a33_4.d74c14360daa8244c9764fbbcab6e9fb.jpeg" alt="Dell Monitor" width="200" height="200"/>
+                <br>
+                Price: &#8377;15999
+            </th>
+        </tr>
+        <tr>
+            <th>HP Printer
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4973/4973102_rd.jpg" alt="HP Printer" width="200" height="200"/>
+                <br>
+                Price: &#8377;8999
+            </th>
+            <th>Canon DSLR Camera
+                <br>
+                <img src="https://m.media-amazon.com/images/I/61jL+1gWqzL._AC_SL1500_.jpg" alt="Canon DSLR Camera" width="200" height="200"/>
+                <br>
+                Price: &#8377;45999
+            </th>
+        </tr>
+    </table>
+    </div>
+    <div class="products">
+        <table>
+        <tr>
+            <th>SkullCandy Headphones
+                <br>
+                <img src="https://m.media-amazon.com/images/I/71XCMVABUdL._AC_.jpg" alt="SkullCandy Headphones" width="200" height="200"/>
+                <br>
+                Price: &#8377;2999
+            </th>
+            <th>Boat Airdopes
+                <br>
+                <img src="https://m.media-amazon.com/images/I/614gbl-O98L._AC_.jpg" alt="Boat Airdopes" width="200" height="200"/>
+                <br>
+                Price: &#8377;1999
+            </th>
+        </tr>
+        <tr>
+            <th>JBL Bluetooth Speaker
+                <br>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6583/6583087_rd.jpg" alt="JBL Bluetooth Speaker" width="200" height="200"/>
+                <br>
+                Price: &#8377;3499
+            </th>
+            <th>Apple AirPods
+                <br>
+                <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2023/04/apple-airpods-pro-2.jpg" alt="Apple AirPods" width="200" height="200"/>
+                <br>
+                Price: &#8377;12999
+            </th>
+        </tr>
+    </table>
+    
+    
+    </div>
+    </div>
+    
+
+    
+    <footer>
+        <p>&copy; 2024 Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+</body>
+</html>
